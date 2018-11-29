@@ -1,27 +1,27 @@
-webpackJsonp([8],{
+webpackJsonp([4],{
 
-/***/ "./static/pages/index/app.html":
+/***/ "./static/components/app/index.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div id=\"app\" class=\"app\">\n    <router-view></router-view>\n</div>\n\n"
 
 /***/ }),
 
-/***/ "./static/pages/index/app.less":
+/***/ "./static/components/app/index.less":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ "./static/pages/index/app.ts":
+/***/ "./static/components/app/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__("./node_modules/vue-property-decorator/lib/vue-property-decorator.umd.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_less__ = __webpack_require__("./static/pages/index/app.less");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__app_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_less__ = __webpack_require__("./static/components/app/index.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__index_less__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -47,7 +47,7 @@ var App = /** @class */ (function (_super) {
     }
     App = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__["Component"])({
-            template: __webpack_require__("./static/pages/index/app.html"),
+            template: __webpack_require__("./static/components/app/index.html"),
             components: {}
         })
     ], App);
@@ -64,8 +64,8 @@ var App = /** @class */ (function (_super) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app__ = __webpack_require__("./static/pages/index/app.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__("./static/router.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__static_components_app__ = __webpack_require__("./static/components/app/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__("./static/pages/index/router.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_iview_dist_styles_iview_css__ = __webpack_require__("./node_modules/iview/dist/styles/iview.css");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_iview_dist_styles_iview_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_iview_dist_styles_iview_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_iview__ = __webpack_require__("./node_modules/iview/dist/iview.js");
@@ -79,14 +79,14 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_4_ivi
 new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
     el: '#app',
     router: Object(__WEBPACK_IMPORTED_MODULE_2__router__["a" /* createRouter */])(),
-    render: function (h) { return h(__WEBPACK_IMPORTED_MODULE_1__app__["a" /* default */]); },
+    render: function (h) { return h(__WEBPACK_IMPORTED_MODULE_1__static_components_app__["a" /* default */]); },
     components: {}
 });
 
 
 /***/ }),
 
-/***/ "./static/router.ts":
+/***/ "./static/pages/index/router.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -94,29 +94,27 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createRouter; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__("./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_hot_reload__ = __webpack_require__("./static/utils/hot-reload.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_utils_hot_reload__ = __webpack_require__("./static/utils/hot-reload.ts");
 
 
 
-var homeComponent = function () { return __webpack_require__.e/* import() */(2/* duplicate */).then(__webpack_require__.bind(null, "./static/components/home/home.ts")).then(function (_a) {
-    var HomeComponent = _a.HomeComponent;
-    return HomeComponent;
-}); };
-var aboutComponent = function () { return __webpack_require__.e/* import() */(1/* duplicate */).then(__webpack_require__.bind(null, "./static/components/about/about.ts")).then(function (_a) {
-    var AboutComponent = _a.AboutComponent;
-    return AboutComponent;
-}); };
-var listComponent = function () { return __webpack_require__.e/* import() */(0/* duplicate */).then(__webpack_require__.bind(null, "./static/components/list/list.ts")).then(function (_a) {
-    var ListComponent = _a.ListComponent;
-    return ListComponent;
+var homeComponent = function () { return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, "./static/pages/index/subpages/home/index.ts")).then(function (item) {
+    return item.HomeComponent;
 }); };
 if (false) {
-    var homeModuleId_1 = './components/home';
-    var aboutModuleId_1 = './components/about';
-    var listModuleId_1 = './components/list';
-    makeHot(homeModuleId_1, homeComponent, module.hot.accept('./components/home/home', function () { return reload(homeModuleId_1, require('./components/home/home').HomeComponent); }));
-    makeHot(aboutModuleId_1, aboutComponent, module.hot.accept('./components/about/about', function () { return reload(aboutModuleId_1, require('./components/about/about').AboutComponent); }));
-    makeHot(listModuleId_1, listComponent, module.hot.accept('./components/list/list', function () { return reload(listModuleId_1, require('./components/list/list').ListComponent); }));
+    makeHot('./subpages/home', homeComponent, module.hot.accept('./subpages/home', function () { return reload('./subpages/home', require('./subpages/home').HomeComponent); }));
+}
+var aboutComponent = function () { return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, "./static/pages/index/subpages/about/index.ts")).then(function (item) {
+    return item.AboutComponent;
+}); };
+if (false) {
+    makeHot('./subpages/about', aboutComponent, module.hot.accept('./subpages/about', function () { return reload('./subpages/about', require('./subpages/about').AboutComponent); }));
+}
+var listComponent = function () { return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, "./static/pages/index/subpages/list/index.ts")).then(function (item) {
+    return item.ListComponent;
+}); };
+if (false) {
+    makeHot('./subpages/list', listComponent, module.hot.accept('./subpages/list', function () { return reload('./subpages/list', require('./subpages/list').ListComponent); }));
 }
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 var createRoutes = function () { return [

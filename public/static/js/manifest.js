@@ -34,7 +34,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		11: 0
+/******/ 		6: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/" + ({"3":"vendor","4":"wormhole","5":"tools","6":"market","7":"kb","8":"index","9":"fit","10":"login"}[chunkId]||chunkId) + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/" + ({"3":"vendor","4":"index","5":"login"}[chunkId]||chunkId) + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -141,7 +141,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/static/";
+/******/ 	__webpack_require__.p = "./static/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };

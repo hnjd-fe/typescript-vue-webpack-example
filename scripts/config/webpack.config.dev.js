@@ -1,6 +1,7 @@
 
 const webpack = require('webpack');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const helpers = require('./helpers')
 const webpackConfig = require('./webpack.config.base')
@@ -26,9 +27,27 @@ webpackConfig.output =  {
 },
 
 webpackConfig.plugins = [...webpackConfig.plugins,
+
     new webpack.DefinePlugin({
         'process.env': env
     }),
+
+    new HtmlWebpackPlugin({
+        inject: true,
+        filename: "index.html",
+        chunks: ['manifest', 'vendor', 'index'],
+        template: helpers.root('/static/index.html'),
+        favicon: helpers.root('/static/favicon.ico')
+    }),
+
+    new HtmlWebpackPlugin({
+        inject: true,
+        filename: "login.html",
+        chunks: ['manifest', 'vendor', 'login'],
+        template: helpers.root('/static/index.html'),
+        favicon: helpers.root('/static/favicon.ico')
+    }),
+
     new webpack.optimize.CommonsChunkPlugin({
         name: 'vendor',
         minChunks: function (module) {

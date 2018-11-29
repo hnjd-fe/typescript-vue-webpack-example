@@ -579,14 +579,28 @@ var __assign=function(){return(__assign=Object.assign||function(e){for(var a,s=1
 
 /***/ }),
 
-/***/ "./static/components/about/about.html":
+/***/ "./static/less/common.less":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./static/pages/index/subpages/about/index.html":
 /***/ (function(module, exports) {
 
 module.exports = "<b-container class=\"content\">\n  <b-row>\n    <b-col class=\"content\">\n      <h1>\n        <strong>This is the about page</strong>\n      </h1>\n      <p>Make sure to follow the project on\n        <a class=\"repo-link\" :href=\"repo\">GitHub</a> to stay up to date with the latest releases, or contribute to the broject by opening an issue or making\n        a pull-request!</p>\n    </b-col>\n  </b-row>\n</b-container>\n"
 
 /***/ }),
 
-/***/ "./static/components/about/about.ts":
+/***/ "./static/pages/index/subpages/about/index.less":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./static/pages/index/subpages/about/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -597,7 +611,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_layout_container__ = __webpack_require__("./node_modules/bootstrap-vue/es/components/layout/container.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_es_components_layout_col__ = __webpack_require__("./node_modules/bootstrap-vue/es/components/layout/col.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_layout_row__ = __webpack_require__("./node_modules/bootstrap-vue/es/components/layout/row.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_log__ = __webpack_require__("./static/utils/log.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_utils_log__ = __webpack_require__("./static/utils/log.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_less_common_less__ = __webpack_require__("./static/less/common.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_less_common_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__static_less_common_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__index_less__ = __webpack_require__("./static/pages/index/subpages/about/index.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__index_less__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -619,22 +637,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AboutComponent = /** @class */ (function (_super) {
     __extends(AboutComponent, _super);
     function AboutComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.repo = 'https://github.com/ducksoupdev/vue-webpack-typescript';
+        _this.repo = 'https://github.com/openjavascript/typescript-vue-webpack-example';
         return _this;
     }
     AboutComponent.prototype.mounted = function () {
         var _this = this;
         if (!this.logger)
-            this.logger = new __WEBPACK_IMPORTED_MODULE_4__utils_log__["a" /* Logger */]();
+            this.logger = new __WEBPACK_IMPORTED_MODULE_4__static_utils_log__["a" /* Logger */]();
         this.$nextTick(function () { return _this.logger.info('about is ready!'); });
     };
     AboutComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__["Component"])({
-            template: __webpack_require__("./static/components/about/about.html"),
+            template: __webpack_require__("./static/pages/index/subpages/about/index.html"),
             components: {
                 'b-container': __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_layout_container__["a" /* default */],
                 'b-col': __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_es_components_layout_col__["a" /* default */],

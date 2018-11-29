@@ -2175,14 +2175,14 @@ var __assign=function(){return(__assign=Object.assign||function(e){for(var a,s=1
 
 /***/ }),
 
-/***/ "./static/components/list/list.html":
+/***/ "./static/pages/index/subpages/list/index.html":
 /***/ (function(module, exports) {
 
 module.exports = "<b-container class=\"content\">\n  <b-row>\n    <b-col class=\"content\">\n      <h1>List</h1>\n      <ul>\n        <li v-for=\"item in items\">{{item.name}}</li>\n      </ul>\n    </b-col>\n  </b-row>\n</b-container>\n"
 
 /***/ }),
 
-/***/ "./static/components/list/list.ts":
+/***/ "./static/pages/index/subpages/list/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2246,7 +2246,7 @@ var ListComponent = /** @class */ (function (_super) {
     };
     ListComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__["Component"])({
-            template: __webpack_require__("./static/components/list/list.html"),
+            template: __webpack_require__("./static/pages/index/subpages/list/index.html"),
             components: {
                 'b-container': __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_es_components_layout_container__["a" /* default */],
                 'b-col': __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_layout_col__["a" /* default */],

@@ -1,6 +1,6 @@
-webpackJsonp([10],{
+webpackJsonp([5],{
 
-/***/ "./static/less/test.less":
+/***/ "./static/less/common.less":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -17,18 +17,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_material___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_material__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_iview__ = __webpack_require__("./node_modules/iview/dist/iview.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_iview___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_iview__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__less_test_less__ = __webpack_require__("./static/less/test.less");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__less_test_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__less_test_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_less_common_less__ = __webpack_require__("./static/less/common.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_less_common_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__static_less_common_less__);
 
 
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_2_iview___default.a);
 __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue_material___default.a);
-var LoginComponent = __webpack_require__("./static/pages/login/item.ts").LoginComponent;
+var LoginComponent = __webpack_require__("./static/pages/login/subpages/login/index.ts").LoginComponent;
 // tslint:disable-next-line:no-unused-expression
 new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
-    el: '#login',
+    el: '#app',
     computed: {
         viewComponent: function () {
             return LoginComponent;
@@ -40,21 +40,21 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["default"]({
 
 /***/ }),
 
-/***/ "./static/pages/login/item.html":
+/***/ "./static/pages/login/subpages/login/index.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"login-wrapper\">\r\n    <div class=\"form-wrapper\">\r\n        <i-form ref=\"formLogin\" :model=\"formLogin\" :rules=\"loginRule\" :label-width=\"80\">\r\n            <tabs ref=\"tab\" v-model=\"formLogin.formtype\" :animated=\"false\">\r\n                <tab-pane label=\"普通登陆\" name=\"normal\">\r\n                </tab-pane>\r\n                <tab-pane label=\"LDAP登陆\" name=\"ldap\">\r\n                </tab-pane>\r\n            </tabs>\r\n            <form-item prop=\"formtype\" style=\"display:none;\">\r\n                <i-input type=\"text\" v-model=\"formLogin.formtype\"></i-input>\r\n            </form-item>\r\n            <form-item label=\"e-mail\" prop=\"username\">\r\n                <i-input type=\"text\" v-model=\"formLogin.username\"></i-input>\r\n            </form-item>\r\n            <form-item label=\"password\" prop=\"password\">\r\n                <i-input type=\"password\" v-model=\"formLogin.password\"></i-input>\r\n            </form-item>\r\n            <form-item>\r\n                <i-button type=\"primary\" @click=\"handleSubmit('formLogin')\">Submit</i-button>\r\n                <i-button @click=\"handleReset('formLogin')\" style=\"margin-left: 8px\">Reset</i-button>\r\n            </form-item>\r\n        </i-form>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div class=\"login-wrapper\">\r\n    <div class=\"form-wrapper\">\r\n        <a href=\"/\">index.html</a>\r\n        <i-form ref=\"formLogin\" :model=\"formLogin\" :rules=\"loginRule\" :label-width=\"80\">\r\n            <tabs ref=\"tab\" v-model=\"formLogin.formtype\" :animated=\"false\">\r\n                <tab-pane label=\"普通登陆\" name=\"normal\">\r\n                </tab-pane>\r\n                <tab-pane label=\"LDAP登陆\" name=\"ldap\">\r\n                </tab-pane>\r\n            </tabs>\r\n            <form-item prop=\"formtype\" style=\"display:none;\">\r\n                <i-input type=\"text\" v-model=\"formLogin.formtype\"></i-input>\r\n            </form-item>\r\n            <form-item label=\"e-mail\" prop=\"username\">\r\n                <i-input type=\"text\" v-model=\"formLogin.username\"></i-input>\r\n            </form-item>\r\n            <form-item label=\"password\" prop=\"password\">\r\n                <i-input type=\"password\" v-model=\"formLogin.password\"></i-input>\r\n            </form-item>\r\n            <form-item>\r\n                <i-button type=\"primary\" @click=\"handleSubmit('formLogin')\">Submit</i-button>\r\n                <i-button @click=\"handleReset('formLogin')\" style=\"margin-left: 8px\">Reset</i-button>\r\n            </form-item>\r\n        </i-form>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ "./static/pages/login/item.less":
+/***/ "./static/pages/login/subpages/login/index.less":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ "./static/pages/login/item.ts":
+/***/ "./static/pages/login/subpages/login/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -62,8 +62,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__ = __webpack_require__("./node_modules/vue-property-decorator/lib/vue-property-decorator.umd.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_property_decorator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_less__ = __webpack_require__("./static/pages/login/item.less");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__item_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__item_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_less__ = __webpack_require__("./static/pages/login/subpages/login/index.less");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__index_less__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -86,8 +86,8 @@ var LoginComponent = /** @class */ (function (_super) {
     __extends(LoginComponent, _super);
     function LoginComponent() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.package = 'vue-webpack-typescript';
-        _this.repo = 'https://github.com/ducksoupdev/vue-webpack-typescript';
+        _this.package = 'typescript-vue-webpack-example';
+        _this.repo = 'https://github.com/openjavascript/typescript-vue-webpack-example';
         _this.mode = "production";
         return _this;
     }
@@ -138,7 +138,7 @@ var LoginComponent = /** @class */ (function (_super) {
     };
     LoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0_vue_property_decorator__["Component"])({
-            template: __webpack_require__("./static/pages/login/item.html")
+            template: __webpack_require__("./static/pages/login/subpages/login/index.html")
         })
     ], LoginComponent);
     return LoginComponent;

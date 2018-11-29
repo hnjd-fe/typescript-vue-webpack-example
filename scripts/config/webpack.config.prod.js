@@ -1,6 +1,7 @@
 
 const webpack = require('webpack');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const webpackConfig = require('./webpack.config.base')
 const helpers = require('./helpers')
@@ -35,6 +36,48 @@ webpackConfig.plugins = [
         name: 'manifest',
         minChunks: Infinity
     }),
+
+    new HtmlWebpackPlugin({
+        inject: true,
+        filename: helpers.root('/public/index.html'),
+        chunks: ['manifest', 'vendor', 'index'],
+        template: helpers.root('/static/index.html'),
+        favicon: helpers.root('/static/favicon.ico'),
+        minify: {
+            removeComments: false,
+            collapseWhitespace: false,
+            removeRedundantAttributes: false,
+            useShortDoctype: false,
+            removeEmptyAttributes: false,
+            removeStyleLinkTypeAttributes: false,
+            keepClosingSlash: false,
+            minifyJS: false,
+            minifyCSS: false,
+            minifyURLs: false
+        }
+    }),
+
+    new HtmlWebpackPlugin({
+        inject: true,
+        filename: helpers.root('/public/login.html'),
+        chunks: ['manifest', 'vendor', 'login'],
+        template: helpers.root('/static/index.html'),
+        favicon: helpers.root('/static/favicon.ico'),
+        minify: {
+            removeComments: false,
+            collapseWhitespace: false,
+            removeRedundantAttributes: false,
+            useShortDoctype: false,
+            removeEmptyAttributes: false,
+            removeStyleLinkTypeAttributes: false,
+            keepClosingSlash: false,
+            minifyJS: false,
+            minifyCSS: false,
+            minifyURLs: false
+        }
+    }),
+
+
     new FaviconsWebpackPlugin(helpers.root('/static/icon.png'))
 ]
 
