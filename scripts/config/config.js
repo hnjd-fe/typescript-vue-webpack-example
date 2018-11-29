@@ -25,11 +25,6 @@ module.exports = {
         entries: {
             'login'     : helpers.root('/static/pages/login/index.ts'),
 
-            'fit'       : helpers.root('/static/pages/fit/index.ts'),
-            'kb'        : helpers.root('/static/pages/kb/index.ts'),
-            'market'    : helpers.root('/static/pages/market/index.ts'),
-            'tools'     : helpers.root('/static/pages/tools/index.ts'),
-            'wormhole'  : helpers.root('/static/pages/wormhole/index.ts'),  
             'index'     : helpers.root('/static/pages/index/index.ts')
         }
     },
