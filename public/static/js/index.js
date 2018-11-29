@@ -123,6 +123,10 @@ var createRoutes = function () { return [
         component: homeComponent
     },
     {
+        path: '/index.html',
+        component: homeComponent
+    },
+    {
         path: '/about',
         component: aboutComponent
     },
