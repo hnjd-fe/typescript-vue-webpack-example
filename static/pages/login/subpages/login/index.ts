@@ -4,19 +4,19 @@ import bCol from 'bootstrap-vue/es/components/layout/col'
 import bRow from 'bootstrap-vue/es/components/layout/row'
 
 import iview from 'iview';
-import './item.less'
+import './index.less'
 
 //import {request} from '../../../static/utils/fetch';
 import {request} from '@static/example';
 
 
 @Component({
-    template: require( './item.html' )
+    template: require( './index.html' )
 })
 export class LoginComponent extends Vue {
 
-    package: string = 'vue-webpack-typescript'
-    repo: string = 'https://github.com/ducksoupdev/vue-webpack-typescript'
+  package: string = 'typescript-vue-webpack-example'
+  repo: string = 'https://github.com/openjavascript/typescript-vue-webpack-example'
     mode: string = process.env.ENV
 
 

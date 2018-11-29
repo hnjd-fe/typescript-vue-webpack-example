@@ -2,16 +2,16 @@ import Vue from 'vue'
 import VueMaterial from 'vue-material';
 import iView from 'iview';
 
-import '../../less/common.less'
+import '@static/less/common.less'
 
 Vue.use( iView );
 Vue.use(VueMaterial);
 
-const LoginComponent =  (require('../../pages/login/item') as any).LoginComponent;
+const LoginComponent =  (require('./subpages/login') as any).LoginComponent;
 
 // tslint:disable-next-line:no-unused-expression
 new Vue({
-    el: '#login',
+    el: '#app',
     computed: {
         viewComponent() {
             return LoginComponent;
