@@ -11,7 +11,7 @@ example project for continue new project
   
   http://localhost.:9211/login.html
   
-## publishe
+## publish
   yarn public
   
   all static file in /public/
