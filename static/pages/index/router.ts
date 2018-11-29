@@ -34,6 +34,10 @@ export const createRoutes: () => RouteConfig[] = () => [
     component: homeComponent
   },
   {
+    path: '/index.html',
+    component: homeComponent
+  },
+  {
     path: '/about',
     component: aboutComponent
   },
