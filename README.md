@@ -14,4 +14,4 @@ example project for continue new project
 ## publishe
   yarn public
   
-  all static file at /public/
+  all static file in /public/
