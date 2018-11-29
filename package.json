@@ -2,7 +2,7 @@
   "name": "vuets",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "qiushaowei <qiushaowei@360.net>",
+  "author": "suches<suches@btbtd.org>",
   "private": true,
   "engines": {
     "node": ">=6",
