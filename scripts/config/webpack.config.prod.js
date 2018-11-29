@@ -77,7 +77,6 @@ webpackConfig.plugins = [
         }
     }),
 
-
     new FaviconsWebpackPlugin(helpers.root('/static/icon.png'))
 ]
 
