@@ -1,6 +1,5 @@
 import { Component, Vue } from 'vue-property-decorator'
 
-import '@static/less/common.less';
 import './index.less'
 
 @Component({

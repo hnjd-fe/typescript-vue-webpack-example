@@ -27,6 +27,7 @@
     "progress-bar-webpack-plugin": "^1.11.0",
     "qs": "6.5.2",
     "request": "^2.88.0",
+    "reset-css": "^4.0.1",
     "ts-loader": "5.1.0",
     "vue": "~2.5.13",
     "vue-class-component": "~6.1.2",

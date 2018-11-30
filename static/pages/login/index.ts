@@ -2,8 +2,6 @@ import Vue from 'vue'
 import VueMaterial from 'vue-material';
 import iView from 'iview';
 
-import '@static/less/common.less'
-
 Vue.use( iView );
 Vue.use(VueMaterial);
 

@@ -4,7 +4,6 @@ import bCol from 'bootstrap-vue/es/components/layout/col'
 import bRow from 'bootstrap-vue/es/components/layout/row'
 import { Logger } from '@static/utils/log'
 
-import '@static/less/common.less';
 import './index.less'
 
 @Component({

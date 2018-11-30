@@ -1,9 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
-import bContainer from 'bootstrap-vue/es/components/layout/container'
-import bCol from 'bootstrap-vue/es/components/layout/col'
-import bRow from 'bootstrap-vue/es/components/layout/row'
+import App from '@static/components/app'
 
-import iview from 'iview';
 import './index.less'
 
 //import {request} from '../../../static/utils/fetch';
@@ -12,14 +9,11 @@ import {request} from '@static/example';
 
 @Component({
     template: require( './index.html' )
+    , components: {
+        App
+    }
 })
 export class LoginComponent extends Vue {
-
-  package: string = 'typescript-vue-webpack-example'
-  repo: string = 'https://github.com/openjavascript/typescript-vue-webpack-example'
-    mode: string = process.env.ENV
-
-
     data () {
         const validatePass = (rule, value, callback) => {
             if (value === '') {
@@ -28,7 +22,7 @@ export class LoginComponent extends Vue {
                 callback();
             }
         };
-        
+
         return {
             formLogin: {
                 formtype: 'normal',
