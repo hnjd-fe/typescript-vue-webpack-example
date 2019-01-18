@@ -1,6 +1,6 @@
 {
-  "name": "vuets",
-  "description": "A Vue.js project",
+  "name": "typescript-vue-webpack-example",
+  "description": "vue typescript example",
   "version": "1.0.0",
   "author": "suches<suches@btbtd.org>",
   "private": true,
